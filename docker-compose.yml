@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: kismet
+    ports:
+      - 5432:5432
